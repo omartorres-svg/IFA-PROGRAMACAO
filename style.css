@@ -14,3 +14,62 @@ header{
    font-weight: bolder;
    flex:auto
 }
+/* Paleta Dourada e Escura */
+:root {
+    --dourado-escuro: #996515;
+    --dourado-principal: #d4af37;
+    --dourado-claro: #f3e5ab;
+    --fundo-escuro: #121212;
+    --fundo-card: #1e1e1e;
+    --texto-claro: #f5f5f5;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo-escuro);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+/* Acessibilidade - Link para pular conteúdo */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: var(--dourado-principal);
+    color: #000;
+    padding: 8px 16px;
+    z-index: 100;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: top 0.2s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Foco Visível para Navegação por Teclado */
+a:focus, button:focus, iframe:focus {
+    outline: 3px solid var(--dourado-claro);
+    outline-offset: 3px;
+}
+
+/* Containers e Cabeçalho */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, var)(--dourado-escuro), var(--dourado-principal)
+}
