@@ -1,61 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade no IFA</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusión Digital - Portal de Accesibilidad Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Acessibilidade e Inclusão no IFA</h1>
-        <p>Garantindo um ambiente de aprendizagem acessível para todas as pessoas.</p>
-    </header>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-    <main>
-        <section id="informacao">
-            <h2>O que é a acessibilidade no IFA?</h2>
-            <p>
-                A acessibilidade no IFA visa eliminar barreiras físicas, digitais e pedagógicas para que toda a comunidade acadêmica possa participar em igualdade de condições.
-            </p>
-            <ul>
-                <li><strong>Acessibilidade Física:</strong> Rampas de acesso, elevadores e sinalização adaptada em todo o campus.</li>
-                <li><strong>Acessibilidade Digital:</strong> Compatibilidade com leitores de tela, legendas em vídeos e site otimizado conforme as diretrizes WCAG.</li>
-            </ul>
-        </section>
+  <header role="banner">
+    <div class="container">
+      <h1>Inclusión Digital</h1>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#principios">Principios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="galeria">
-            <h2>Infraestrutura Adaptada</h2>
-            <div class="gallery">
-                <figure>
-                    <img src="rampa-acesso.jpg" alt="Rampa de acesso adaptada na entrada principal do prédio do IFA">
-                    <figcaption>Rampa de acesso na entrada principal do IFA.</figcaption>
-                </figure>
-                <figure>
-                    <img src="sala-adaptada.jpg" alt="Sala de aula com carteiras adaptadas para pessoas em cadeira de rodas e sinalização em Braille">
-                    <figcaption>Espaço de aprendizagem adaptado e inclusivo.</figcaption>
-                </figure>
-            </div>
-        </section>
+  <main id="main-content" role="main">
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h2>Diseñando la Web para Todos</h2>
+        <p>La accesibilidad web garantiza que las personas con discapacidad puedan percibir, comprender, navegar e interactuar con la web.</p>
+      </div>
+    </section>
 
-        <section id="video-explicativo">
-            <h2>Vídeo Explicativo sobre Acessibilidade</h2>
-            <p>Assista ao vídeo abaixo para conhecer nossas instalações e projetos de inclusão.</p>
+    <section id="principios" class="content-section">
+      <div class="container">
+        <h2>Claves de Accesibilidad Web</h2>
+        
+        <div class="cards-grid">
+          <article class="card">
+            <h3>1. Lector de Pantalla (Audio)</h3>
+            <p>Usamos etiquetas semánticas (`<header>`, `<main>`, `<article>`) y atributos `alt` en imágenes para que los programas de lectura en voz alta conviertan el texto en audio sin fallos.</p>
+          </article>
 
-            <div class="video-container">
-                <video controls poster="miniatura-video.jpg">
-                    <source src="video-explicativo.mp4" type="video/mp4">
-                    <track src="legendas.vtt" kind="subtitles" srclang="pt" label="Português">
-                    Seu navegador não suporta a tag de vídeo.
-                </video>
-            </div>
-        </section>
-    </main>
+          <article class="card">
+            <h3>2. Contraste y Colores</h3>
+            <p>El fondo y el texto deben tener un alto contraste de color para facilitar la lectura a personas con baja visión o daltonismo.</p>
+          </article>
 
-    <footer>
-        <p>&copy; 2026 IFA - Compromisso com a Acessibilidade e a Inclusão.</p>
-    </footer>
+          <article class="card">
+            <h3>3. Navegación por Teclado</h3>
+            <p>Todos los elementos interactivos (botones, enlaces) deben ser accesibles usando únicamente la tecla <kbd>Tab</kbd>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Inclusión Digital. Creado con acceso universal en mente.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
