@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade para Todos | Construindo Espaços Inclusivos</title>
+  <!-- Importação do arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Link de atalho direto para o conteúdo principal (Teclado/Leitores de Tela) -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- BARRA SUPERIOR / CABEÇALHO -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span aria-hidden="true">♿</span> Escola Acessível
+      </div>
+
+      <!-- FERRAMENTA DE VOZ PARA PESSOAS CEGAS / BAIXA VISÃO -->
+      <div class="accessibility-tools">
+        <button id="btn-read-page" class="btn-tool" onclick="toggleReadPage()" aria-label="Ouvir o conteúdo da página em voz alta">
+          <span id="read-icon" aria-hidden="true">🔊</span>
+          <span id="read-text">Ouvir Página (Voz)</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Acessibilidade Educacional: O Futuro é Inclusivo</h1>
+      <p>Transformando espaços escolares e digitais em ambientes livres de barreiras para todas as pessoas.</p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="main-content">
+
+    <!-- SEÇÃO 1: INFORMAÇÕES E CONCEITO -->
+    <section id="sobre">
+      <h2>O que é Acessibilidade?</h2>
+      <p>A acessibilidade é o direito de pessoas com deficiência ou mobilidade reduzida de viverem de forma independente e participarem plenamente de todos os aspectos da vida. Na educação, isso significa garantir que infraestruturas físicas, tecnologias e metodologias de ensino atendam a todos de forma igualitária.</p>
+
+      <div class="grid-cards">
+        <article class="card" tabindex="0">
+          <h3>Acessibilidade Arquitetônica</h3>
+          <p>Eliminação de barreiras em edifícios, como a instalação de rampas de acesso, elevadores adaptados, pisos táteis e portas amplas para cadeirantes.</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>Acessibilidade Digital</h3>
+          <p>Garantia de que sites e softwares sejam navegáveis por leitores de tela, ofereçam bom contraste visual e suporte para comandos por teclado.</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>Acessibilidade Atitudinal</h3>
+          <p>Superação de preconceitos, estigmas e barreiras comportamentais na sociedade, promovendo a empatia e o respeito às diferenças.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: CURIOSIDADES -->
+    <section id="curiosidades">
+      <h2>Curiosidades sobre o Tema</h2>
+      <div class="grid-cards">
+        <article class="card" tabindex="0">
+          <h3>💡 O Símbolo do Piso Tátil</h3>
+          <p>Existem dois tipos principais de piso tátil: o <strong>direcional</strong> (com linhas retas, que guia o caminho) e o <strong>alerta</strong> (com bolinhas, que indica perigo ou mudança de direção).</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>🎙️ A Origem da Voz Sintetizada</h3>
+          <p>Stephen Hawking foi uma das figuras mais célebres a utilizar um sintetizador de voz para se comunicar, popularizando a tecnologia assistiva no meio científico mundial.</p>
+        </article>
+
+        <article class="card" tabindex="0">
+          <h3>🌐 Padrões WCAG</h3>
+          <p>Existe uma diretriz internacional chamada WCAG (Web Content Accessibility Guidelines) que estabelece regras globais para tornar a web acessível para pessoas cegas, surdas e neurodivergentes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: MAQUETES DE ESCOLA CRIADAS POR IA -->
+    <section id="maquetes">
+      <h2>Maquete de Escola Acessível (Projeto IA)</h2>
+      <p>Abaixo estão duas representações conceituais de um projeto arquitetônico para uma escola 100% inclusiva, geradas com o auxílio de Inteligência Artificial:</p>
+
+      <div class="gallery-grid">
+        <!-- Imagem 1 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" 
+               alt="Maquete visual de uma escola moderna com rampas suaves de madeira, piso tátil de destaque e amplas janelas de iluminação natural." />
+          <div class="caption">
+            <span class="tag-ia">Maquete IA - Foto 1</span>
+            <h3>Entrada Integrada e Rampas Suaves</h3>
+            <p>Conceito 3D mostrando uma entrada sem degraus, com rampas de inclinação suave, sinalização tátil integrada ao pavimento e guichês em dupla altura.</p>
+          </div>
+        </div>
+
+        <!-- Imagem 2 -->
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+               alt="Maquete interior de uma sala de aula inclusiva, com corredores largos, mesas adaptadas ajustáveis e recursos multissensoriais." />
+          <div class="caption">
+            <span class="tag-ia">Maquete IA - Foto 2</span>
+            <h3>Sala de Aula Inclusiva e Multissensorial</h3>
+            <p>Projeto de espaço interno com mobiliário regulável para cadeirantes, iluminação regulável para pessoas no espectro autista e recursos táteis nas paredes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: VÍDEO EXPLICATIVO -->
+    <section id="video">
+      <h2>Vídeo: Conheça mais sobre Acessibilidade</h2>
+      <p>Assista ao vídeo abaixo para entender na prática a importância do design universal nas escolas e ambientes urbanos:</p>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/20M_3c8j91M" 
+                title="Vídeo demonstrativo sobre acessibilidade e inclusão" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p><strong>Escola Acessível</strong> — Desenvolvido com foco em Inclusão e Design Universal.</p>
+    <p>Conteúdo adaptado para leitores de tela. Idioma: Português (Brasil).</p>
+  </footer>
+
+  <!-- Importação do script JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
