@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site educativo sobre acessibilidade nas escolas.">
+    <title>Acessibilidade para Todos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE ACESSIBILIDADE -->
+    <div class="access-bar">
+        <button onclick="lerPagina()" aria-label="Ler o conteúdo da página em voz alta">
+            🔊 Ler em voz alta
+        </button>
+
+        <button onclick="pararLeitura()" aria-label="Parar leitura">
+            ⏹ Parar leitura
+        </button>
+
+        <button onclick="altoContraste()" aria-label="Ativar alto contraste">
+            ◐ Alto contraste
+        </button>
+
+        <button onclick="aumentarFonte()" aria-label="Aumentar tamanho da fonte">
+            A+
+        </button>
+
+        <button onclick="diminuirFonte()" aria-label="Diminuir tamanho da fonte">
+            A-
+        </button>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                ♿ <span>Acesso<span class="highlight">+</span></span>
+            </div>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Acessibilidade</a></li>
+                <li><a href="#escola">Escola</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#video">Vídeo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <span class="tag">♿ INCLUSÃO • RESPEITO • IGUALDADE</span>
+
+                <h1>
+                    Acessibilidade é
+                    <span>um direito de todos.</span>
+                </h1>
+
+                <p>
+                    Uma sociedade acessível é aquela em que todas as pessoas
+                    podem estudar, trabalhar, circular e participar
+                    independentemente de suas limitações.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#sobre" class="btn primary">Descobrir mais →</a>
+                    <a href="#escola" class="btn secondary">Ver nossa escola</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="wheelchair">♿</div>
+                <h2>Todos têm espaço</h2>
+                <p>
+                    A acessibilidade transforma espaços em lugares onde
+                    ninguém fica para trás.
+                </p>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="section">
+            <div class="section-title">
+                <span>01 — ENTENDA</span>
+                <h2>O que é acessibilidade?</h2>
+                <p>
+                    Acessibilidade significa eliminar barreiras para que
+                    todas as pessoas possam participar da sociedade.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <article class="info-card">
+                    <div class="icon">🧑‍🦽</div>
+                    <h3>Acessibilidade física</h3>
+                    <p>
+                        Rampas, elevadores, corrimãos, banheiros adaptados
+                        e espaços que permitam a circulação de pessoas
+                        com mobilidade reduzida.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icon">👁️</div>
+                    <h3>Acessibilidade visual</h3>
+                    <p>
+                        Pisos táteis, textos em Braille, audiodescrição,
+                        sinalização adequada e tecnologias que auxiliam
+                        pessoas com deficiência visual.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icon">🦻</div>
+                    <h3>Acessibilidade auditiva</h3>
+                    <p>
+                        Libras, legendas, sinalização visual e recursos
+                        tecnológicos que facilitam a comunicação.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <div class="icon">🧠</div>
+                    <h3>Acessibilidade cognitiva</h3>
+                    <p>
+                        Informações claras, linguagem simples e ambientes
+                        organizados que facilitam a compreensão.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ESCOLA -->
+        <section id="escola" class="school-section">
+
+            <div class="section-title light">
+                <span>02 — NOSSA IDEIA</span>
+                <h2>Uma escola acessível</h2>
+                <p>
+                    Imagine uma escola construída para que todos os alunos
+                    possam aprender e participar.
+                </p>
+            </div>
+
+            <div class="school-content">
+
+                <div class="school-image">
+                    <div class="image-placeholder">
+                        <div class="school-building">
+                            <div class="school-roof"></div>
+                            <div class="school-wall">
+                                <div class="school-sign">ESCOLA<br>PARA TODOS</div>
+                                <div class="windows">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="door"></div>
+                            </div>
+                            <div class="ramp"></div>
+                        </div>
+                    </div>
+                    <p>Maquete conceitual de uma escola acessível</p>
+                </div>
+
+                <div class="school-text">
+
+                    <div class="feature">
+                        <span>01</span>
+                        <div>
+                            <h3>Entrada acessível</h3>
+                            <p>
+                                Rampas com inclinação adequada e portas
+                                amplas facilitam a entrada de todos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>02</span>
+                        <div>
+                            <h3>Piso tátil</h3>
+                            <p>
+                                Ajuda pessoas com deficiência visual a
+                                identificar caminhos e obstáculos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>03</span>
+                        <div>
+                            <h3>Banheiro adaptado</h3>
+                            <p>
+                                Possui espaço e equipamentos adequados
+                                para pessoas com mobilidade reduzida.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>04</span>
+                        <div>
+                            <h3>Sinalização</h3>
+                            <p>
+                                Informações visuais, táteis e sonoras
+                                ajudam diferentes pessoas a encontrar
+                                os espaços da escola.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SEGUNDA MAQUETE -->
+        <section class="model-section">
+
+            <div class="section-title">
+                <span>03 — PROJETO</span>
+                <h2>Como podemos melhorar?</h2>
+            </div>
+
+            <div class="model-grid">
+
+                <div class="model-card">
+                    <div class="model-illustration">
+                        <div class="mini-school">
+                            <div class="mini-roof"></div>
+                            <div class="mini-building">
+                                <div class="mini-window"></div>
+                                <div class="mini-window"></div>
+                                <div class="mini-door"></div>
+                            </div>
+                            <div class="mini-ramp"></div>
+                        </div>
+                    </div>
+
+                    <div class="model-info">
+                        <h3>Maquete 01</h3>
+                        <p>
+                            Representação de uma escola com rampas,
+                            entrada acessível e espaços adaptados.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-illustration second">
+                        <div class="mini-school">
+                            <div class="mini-roof"></div>
+                            <div class="mini-building">
+                                <div class="mini-window"></div>
+                                <div class="mini-window"></div>
+                                <div class="mini-door"></div>
+                            </div>
+                            <div class="mini-ramp"></div>
+                        </div>
+                    </div>
+
+                    <div class="model-info">
+                        <h3>Maquete 02</h3>
+                        <p>
+                            Uma visão de um ambiente escolar pensado
+                            para diferentes necessidades.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CURIOSIDADES -->
+        <section id="curiosidades" class="curiosity-section">
+
+            <div class="section-title light">
+                <span>04 — VOCÊ SABIA?</span>
+                <h2>Curiosidades sobre acessibilidade</h2>
+            </div>
+
+            <div class="curiosity-grid">
+
+                <div class="curiosity">
+                    <strong>01</strong>
+                    <h3>♿ Rampas ajudam muito mais pessoas</h3>
+                    <p>
+                        Além de cadeirantes, rampas podem facilitar o
+                        deslocamento de idosos, pessoas com carrinhos de
+                        bebê e pessoas com mobilidade temporariamente reduzida.
+                    </p>
+                </div>
+
+                <div class="curiosity">
+                    <strong>02</strong>
+                    <h3>👁️ O piso tátil orienta</h3>
+                    <p>
+                        O piso tátil pode indicar caminhos e alertar sobre
+                        obstáculos ou mudanças importantes no ambiente.
+                    </p>
+                </div>
+
+                <div class="curiosity">
+                    <strong>03</strong>
+                    <h3>🔊 Tecnologia pode incluir</h3>
+                    <p>
+                        Leitores de tela, reconhecimento de voz e
+                        audiodescrição podem facilitar o acesso à informação.
+                    </p>
+                </div>
+
+                <div class="curiosity">
+                    <strong>04</strong>
+                    <h3>🤝 Acessibilidade beneficia todos</h3>
+                    <p>
+                        Quando um espaço é planejado para diferentes
+                        necessidades, ele pode se tornar mais confortável
+                        e fácil de usar para toda a comunidade.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VÍDEO -->
+        <section id="video" class="video-section">
+
+            <div class="section-title">
+                <span>05 — ASSISTA</span>
+                <h2>Aprenda sobre inclusão</h2>
+                <p>
+                    Um espaço reservado para apresentar um vídeo sobre
+                    acessibilidade e inclusão.
+                </p>
+            </div>
+
+            <div class="video-container">
+
+                <!-- SUBSTITUA O LINK PELO VÍDEO DO SEU TRABALHO -->
+                <iframe
+                    src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+                    title="Vídeo sobre acessibilidade e inclusão"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+        <!-- FRASE -->
+        <section class="quote-section">
+            <div class="quote">
+                <span>“</span>
+                <h2>
+                    A inclusão começa quando entendemos que
+                    diferentes necessidades merecem os mesmos direitos.
+                </h2>
+                <p>— Acessibilidade para todos</p>
+            </div>
+        </section>
+
+        <!-- COMO AJUDAR -->
+        <section class="help-section">
+
+            <div class="section-title">
+                <span>06 — FAÇA PARTE</span>
+                <h2>Como podemos ajudar?</h2>
+            </div>
+
+            <div class="help-grid">
+
+                <div>
+                    <span>✓</span>
+                    <h3>Respeite</h3>
+                    <p>
+                        Respeite o espaço e a autonomia das pessoas com
+                        deficiência.
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <h3>Observe</h3>
+                    <p>
+                        Identifique barreiras que podem dificultar a
+                        participação de alguém.
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <h3>Inclua</h3>
+                    <p>
+                        Incentive a participação de todos nas atividades
+                        escolares e sociais.
+                    </p>
+                </div>
+
+                <div>
+                    <span>✓</span>
+                    <h3>Compartilhe</h3>
+                    <p>
+                        Converse sobre acessibilidade e ajude a espalhar
+                        informações corretas.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <div class="logo">
+                    ♿ Acesso<span class="highlight">+</span>
+                </div>
+
+                <p>
+                    Construindo espaços onde todos possam participar.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Site</h3>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Acessibilidade</a>
+                <a href="#escola">Escola</a>
+                <a href="#curiosidades">Curiosidades</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Acessibilidade</h3>
+                <p>🔊 Leitura de texto</p>
+                <p>◐ Alto contraste</p>
+                <p>🔎 Tamanho da fonte</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Acesso+ — Projeto escolar sobre acessibilidade.
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
